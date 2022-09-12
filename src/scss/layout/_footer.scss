@@ -1,0 +1,19 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.footer {
+    @include m.flex(row, space-between, center);
+    padding: 0 3rem;
+
+    ul {
+        @include m.flex(row, space-between, center);
+        gap: 3rem;
+    }
+}
+
+.footer__pharagraft {
+    a {
+        font-weight: 700;
+    }
+}
+

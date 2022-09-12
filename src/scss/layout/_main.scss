@@ -1,0 +1,70 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+
+main {
+    width: 100%;
+}
+
+.contenedor {
+    height: 800px;
+    @include m.flex(row, center, center);
+    align-items: center;
+    width: 100%;
+}
+
+.content{
+    width: 50%;
+    @include m.flex(column, center, flex-start);
+    gap: 4rem;
+    padding: 7rem;
+}
+
+
+
+.content__title {
+    text-align: left;
+}
+
+.content__pharagraft {
+    text-align: left;
+}
+
+picture {
+    width: 50%;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.btn-white {
+    @include m.btn(v.$white, v.$black);
+    a {
+        color: v.$black;
+    };
+    transition: all .3s;
+}
+
+.btn-white:hover {
+        @include m.btn(v.$black, v.$white);
+        a {
+            color: v.$white;
+        }
+}
+
+.btn-black {
+    @include m.btn(v.$black, v.$white);
+    a {
+        color: v.$white;
+    };
+    transition: all .3s;
+}
+
+.btn-black:hover {
+        @include m.btn(v.$white, v.$black);
+        a {
+            color: v.$black;
+        };
+}

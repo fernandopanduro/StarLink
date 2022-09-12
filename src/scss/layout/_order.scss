@@ -1,0 +1,14 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.order {
+    @include m.flex(column, center, center);
+    gap: 7rem;
+    padding: 10rem;
+}
+
+.line {
+    height: 24rem;
+    background: v.$white;
+    width: .1rem;
+}

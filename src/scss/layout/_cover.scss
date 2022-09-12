@@ -1,0 +1,44 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.cover-presentation {
+    @include m.flex(column, space-evenly, center);
+    gap: 20rem;
+    width: 100%;
+    video {
+        width: 100vw;
+    };  
+}
+
+.cover-presentation__contenido {
+    position: absolute; 
+    @include m.flex(column, center, center);
+    gap: 40rem;
+    z-index: 100;
+    div {
+        p {
+            text-align: center;
+        }
+    }
+}
+
+h1 {
+    text-align: center;
+}
+
+.cover-presentation__formulario {
+    @include m.flex(row, center, center);
+    gap: 3rem;  
+}
+
+.input-service {
+    background-color: v.$black;
+    opacity: .5;
+    border: 1px v.$white solid;
+    width: 40rem;
+    height: 5rem;
+    padding: 3rem;
+    border-radius: 5px;
+    color: v.$white;
+}
+

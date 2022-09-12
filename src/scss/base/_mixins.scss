@@ -1,0 +1,42 @@
+@use 'variables' as v;
+
+@mixin heading($color) {
+    text-transform: uppercase;
+    background-color: $color;
+}
+
+@mixin flex($direction, $justify, $aling) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $aling;
+}
+
+@mixin btn($bg, $color) {
+    background-color: $bg;
+    color: $color;
+    width: 30rem;
+    height: 5rem;
+    padding: auto;
+    border-radius: 5px;
+    border: 2px solid $color;
+    cursor: pointer;
+}
+
+@mixin phone {
+    @media (min-width: v.$phone) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: v.$tablet) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: v.$desktop) {
+        @content;
+    }
+}

@@ -1,0 +1,48 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.heading {
+    @include m.heading(v.$black)
+};
+
+.header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-right: 5rem;    
+    padding-left: 5rem;
+    z-index: 1000;
+
+    h2 {
+        cursor: pointer;
+        transition: opacity .2s;
+    }
+
+    h2:hover {
+        opacity: .7;    
+    }
+
+}
+
+.header__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    li {
+        transition: opacity .2s;
+    }
+
+    li:hover {
+        opacity: .7;    
+    }
+}
+
+.list__link {
+    text-transform: uppercase;
+}
