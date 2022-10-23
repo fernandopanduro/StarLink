@@ -1,4 +1,4 @@
-<h1 align="center"> ⭐ StarLInk 🏎⭐ </h1>
+<h1 align="center"> ⭐ StarLInk ⭐ </h1>
 
 <p align="center"> Replica en honor a StarLink de Elon Musk  </p> 
 
@@ -12,7 +12,7 @@ https://user-images.githubusercontent.com/92656447/197409072-5f26714d-bcb1-44ee-
 
 * [SASS](https://sass-lang.com/) - Preepocesador CSS
 * [NPM](https://www.npmjs.com/) - Manejador de dependencias
-* [php](https://www.php.net/manual/es/intro-whatis.php) - Lenguaje de programacion principal
+* [Javascript](https://developer.mozilla.org/es/docs/Web/JavaScript) - Lenguaje de programacion principal
 * [Demo]() - Ultima version funcional
 
 ## 🧑‍💻 Instalacion 
